@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "Tocino UI is the experimental design system for the Web",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:packages": "pnpm --filter \"@tocino-ui/*\" build",
+    "lint:configs": "eslint --max-warnings 0 \"./**/*.@(ts|js|cjs|mjs)\"",
+    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
   },
   "keywords": [
     "Design System"
@@ -11,9 +18,14 @@
   "author": "JingHuang Su",
   "license": "ISC",
   "dependencies": {
+    "@tocino-ui/tsconfig": "workspace:*",
     "eslint": "^8.39.0",
+    "eslint-config-eslint": "^7.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.2.4",
     "prettier": "^3.0.0",
-    "turbo": "^1.10.13"
+    "turbo": "^1.10.13",
+    "typescript": "^4.4.4"
   },
   "private": true,
   "packageManager": "pnpm@8.6.12",
