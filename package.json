@@ -7,35 +7,33 @@
     "changeset": "changeset",
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint:configs": "eslint --max-warnings 0 \"./**/*.@(ts|js|cjs|mjs|json)\"",
+    "generate": "plop",
+    "lint": "eslint packages/**/**/src --ext .ts,.tsx --config .eslintrc.js --cache",
     "postinstall": "husky install",
-    "release": "pnpm build && pnpm release:only",
+    "release": "pnpm build:packages && pnpm release:only",
     "release:only": "changeset publish --registry=https://registry.npmjs.com/",
-    "version-packages": "changeset version"
+    "version": "changeset version"
   },
   "keywords": [
     "Design System"
   ],
   "author": "JingHuang Su",
   "license": "ISC",
-  "dependencies": {
-    "@tocino-ui/tsconfig": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.59.2",
-    "@typescript-eslint/parser": "^6.4.1",
-    "eslint": "^8.39.0",
-    "eslint-config-eslint": "^7.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "lint-staged": "^14.0.1",
-    "prettier": "^3.0.0",
-    "turbo": "^1.10.13",
-    "typescript": "^4.4.4"
-  },
   "private": true,
   "packageManager": "pnpm@8.6.12",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
-    "husky": "^8.0.3"
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.39.0",
+    "eslint-config-eslint": "^7.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "plop": "^4.0.0",
+    "prettier": "^3.0.0",
+    "@tocino-ui/tsconfig": "workspace:*",
+    "turbo": "^1.10.13"
   }
 }
