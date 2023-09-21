@@ -6,3 +6,4 @@ dist
 .cache
 .turbo
 .jest-cache
+.jest-coverage
