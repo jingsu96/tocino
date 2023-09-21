@@ -64,5 +64,9 @@
     "storybook": "^7.4.3",
     "ts-jest": "^29.1.0",
     "turbo": "^1.10.13"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

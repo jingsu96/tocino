@@ -2,10 +2,13 @@ module.exports = {
   roots: ['./packages/components'],
   preset: 'ts-jest',
   testEnvironment: './custom-env.ts',
-  globals: {
-    'ts-jest': {
-      tsconfig: '@@tocino-ui/tsconfig/base.json',
-    },
+  transform: {
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        tsconfig: './packages/tsconfig/react-ui.json',
+      },
+    ],
   },
   cacheDirectory: '.jest-cache',
   collectCoverage: true,
