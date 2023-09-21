@@ -5,3 +5,5 @@ dist
 .env
 .cache
 .turbo
+.jest-cache
+.jest-coverage
