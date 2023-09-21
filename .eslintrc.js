@@ -31,5 +31,5 @@ module.exports = {
     jest: true,
     node: true,
   },
-  ignorePatterns: ['node_modules'],
+  ignorePatterns: ['node_modules', 'plop-templates'],
 };

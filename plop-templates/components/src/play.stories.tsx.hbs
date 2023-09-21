@@ -1,0 +1,17 @@
+import * as React from "react";
+import { {{ pascalCase name }} as Component } from "./";
+
+import type { Meta, StoryFn } from '@storybook/react';
+
+export default {
+	title: "{{ pascalCase name }}",
+	component: Component,
+} as Meta<typeof Component>;
+
+const Template: StoryFn<typeof Component> = (args) => (
+  <Component {...args} />
+);
+
+export const {{ pascalCase name }} = Template.bind({});
+
+{{ pascalCase name }}.args = {};

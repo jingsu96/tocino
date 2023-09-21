@@ -1,0 +1,40 @@
+{
+	"name": "@tocino-ui/{{ dashCase componentName }}",
+	"version": "0.0.0",
+	"description": "react {{ pascalCase componentName  }}",
+	"license": "MIT",
+	"source": "src/index.ts",
+	"main": "dist/index.js",
+	"module": "dist/esm/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"README.md",
+		"src"
+	],
+	"repository": {
+    	"type": "git",
+   	 	"url": "git@github.com:JingHuangSu1996/tocino.git"
+	},
+	"sideEffects": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"bugs": {
+		"url": "https://github.com/JingHuangSu1996/tocino/issues"
+	},
+	"scripts": {
+		"test": "echo \"Error: run tests from root\" && exit 1",
+		"build": "tsup src/index.ts --loader .ts=tsx --minify --format esm,cjs --dts --sourcemap --legacy-output --external react",
+		"dev": "tsup src/index.ts --format esm,cjs --watch --dts --legacy-output --external react",
+    	"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+	},
+	"devDependencies": {
+		"tsconfig": "workspace:*",
+		"tsup": "5.11.13",
+    	"typescript": "^5.2.2"
+	},
+	"peerDependencies": {
+		"react": "^16.8.6 || ^17.0.2 || ^18.0.0"
+	}
+}
