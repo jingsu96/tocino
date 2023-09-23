@@ -1,9 +1,8 @@
 .DS_Store
 node_modules
-.turbo
 dist
+jest-coverage
 .env
 .cache
 .turbo
-.jest-cache
-.jest-coverage
+.jest-cache/

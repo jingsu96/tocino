@@ -51,7 +51,6 @@
     "@types/jest": "^29.2.5",
     "@types/node": "^18.11.18",
     "@typescript-eslint/parser": "^6.7.2",
-    "babel-jest": "^29.5.0",
     "eslint": "^8.39.0",
     "eslint-config-eslint": "^7.0.0",
     "eslint-config-prettier": "^8.3.0",

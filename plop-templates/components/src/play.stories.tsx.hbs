@@ -1,17 +1,19 @@
 import * as React from "react";
-import { {{ pascalCase name }} as Component } from "./";
+import { {{ pascalCase name }} as Component } from './';
 
 import type { Meta, StoryFn } from '@storybook/react';
 
-export default {
-	title: "{{ pascalCase name }}",
-	component: Component,
-} as Meta<typeof Component>;
+const storyMetadata: Meta<typeof Component> = {
+  title: "{{ pascalCase name }}",
+  component: Component,
+};
+
+export default storyMetadata;
 
 const Template: StoryFn<typeof Component> = (args) => (
-  <Component {...args} />
+	<Component {...args} />
 );
 
-export const {{ pascalCase name }} = Template.bind({});
+export const {{ pascalCase name }}: StoryFn = Template.bind({});
 
 {{ pascalCase name }}.args = {};
