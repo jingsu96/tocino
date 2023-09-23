@@ -2,7 +2,7 @@ const ERROR = 'error';
 
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['eslint:recommended', 'prettier'],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -30,6 +30,8 @@ module.exports = {
   env: {
     jest: true,
     node: true,
+    browser: true,
+    es6: true,
   },
   ignorePatterns: ['node_modules', 'plop-templates'],
 };

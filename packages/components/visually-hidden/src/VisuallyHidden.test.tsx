@@ -10,7 +10,7 @@ describe('VisuallyHidden', () => {
         <span aria-hidden>👍</span>
       </button>,
     );
-    let visuallyHidden = getByText(hiddenText);
+    const visuallyHidden = getByText(hiddenText);
     expect(visuallyHidden.tagName).toBe('SPAN');
   });
 });
