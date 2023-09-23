@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@tocino-ui/tsconfig": "workspace:*",
-    "tsup": "5.11.13",
+    "tsup": "^6.7.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
