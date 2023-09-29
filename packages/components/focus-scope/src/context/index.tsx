@@ -16,13 +16,13 @@ export interface FocusManagerOptions {
 
 export interface FocusManager {
   /** Moves focus to the next focusable or tabbable element in the focus scope. */
-  focusNext(opts: FocusManagerOptions): FocusableElement | null;
+  focusNext(opts?: FocusManagerOptions): FocusableElement | null;
   /** Moves focus to the previous focusable or tabbable element in the focus scope. */
-  focusPrevious(opts: FocusManagerOptions): FocusableElement | null;
+  focusPrevious(opts?: FocusManagerOptions): FocusableElement | null;
   /** Moves focus to the first focusable or tabbable element in the focus scope. */
-  focusFirst(opts: FocusManagerOptions): FocusableElement | null;
+  focusFirst(opts?: FocusManagerOptions): FocusableElement | null;
   /** Moves focus to the last focusable or tabbable element in the focus scope. */
-  focusLast(opts: FocusManagerOptions): FocusableElement | null;
+  focusLast(opts?: FocusManagerOptions): FocusableElement | null;
 }
 
 export interface IFocusContext {

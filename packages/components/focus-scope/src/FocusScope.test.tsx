@@ -1,4 +1,4 @@
-// eslint-disable @typescript-eslint/no-explicit-any
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 
 import React from 'react';
 import { act, fireEvent, render, screen } from '@testing-library/react';
@@ -14,10 +14,10 @@ describe('FocusScope', function () {
   });
   describe('focus manager', function () {
     it('should move focus forward', function () {
-      function MockButton(props) {
+      function MockButton(props: any) {
         const focusManager: FocusManager = useFocusManager();
         const onClick = () => {
-          focusManager.focusNext();
+          focusManager.focusNext({});
         };
         return <button {...props} tabIndex={-1} onClick={onClick} />;
       }
@@ -50,10 +50,10 @@ describe('FocusScope', function () {
     });
 
     it('should move focus backward', function () {
-      function MockButton(props) {
+      function MockButton(props: any) {
         const focusManager: FocusManager = useFocusManager();
         const onClick = () => {
-          focusManager.focusPrevious();
+          focusManager.focusPrevious({});
         };
         return <button {...props} tabIndex={-1} onClick={onClick} />;
       }
@@ -86,7 +86,7 @@ describe('FocusScope', function () {
     });
 
     it('should move focus forward and wrap around', function () {
-      function MockButton(props) {
+      function MockButton(props: any) {
         const focusManager: FocusManager = useFocusManager();
         const onClick = () => {
           focusManager.focusNext({ wrap: true });
@@ -122,7 +122,7 @@ describe('FocusScope', function () {
     });
 
     it('should move focus backward and wrap around', function () {
-      function MockButton(props) {
+      function MockButton(props: any) {
         const focusManager: FocusManager = useFocusManager();
         const onClick = () => {
           focusManager.focusPrevious({ wrap: true });
@@ -158,7 +158,7 @@ describe('FocusScope', function () {
     });
 
     it('should go to the first focusable element', function () {
-      function MockButton(props) {
+      function MockButton(props: any) {
         const focusManager: FocusManager = useFocusManager();
         const onKeyDown = (evt: React.KeyboardEvent<HTMLButtonElement>) => {
           if (evt.key === 'Home') {
@@ -191,7 +191,7 @@ describe('FocusScope', function () {
     });
 
     it('should go to the last focusable element', function () {
-      function MockButton(props) {
+      function MockButton(props: any) {
         const focusManager: FocusManager = useFocusManager();
         const onKeyDown = (evt: React.KeyboardEvent<HTMLButtonElement>) => {
           if (evt.key === 'End') {

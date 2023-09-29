@@ -160,6 +160,31 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
+  packages/components/utils:
+    dependencies:
+      '@types/react':
+        specifier: '*'
+        version: 18.2.22
+      '@types/react-dom':
+        specifier: '*'
+        version: 18.2.7
+      clsx:
+        specifier: ^2.0.0
+        version: 2.0.0
+      react:
+        specifier: ^16.8.6 || ^17.0.2 || ^18.0.0
+        version: 18.2.0
+    devDependencies:
+      '@tocino-ui/tsconfig':
+        specifier: workspace:*
+        version: link:../../tsconfig
+      tsup:
+        specifier: ^6.7.0
+        version: 6.7.0(@swc/core@1.3.86)(postcss@8.4.30)(ts-node@10.9.1)(typescript@5.2.2)
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
+
   packages/components/visually-hidden:
     dependencies:
       '@types/react':
@@ -7683,6 +7708,12 @@ packages:
       { integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg== }
     engines: { node: '>=0.8' }
     dev: true
+
+  /clsx@2.0.0:
+    resolution:
+      { integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q== }
+    engines: { node: '>=6' }
+    dev: false
 
   /co@4.6.0:
     resolution:
