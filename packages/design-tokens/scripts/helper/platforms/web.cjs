@@ -109,40 +109,6 @@ function getWebConfig(theme) {
         },
       ],
     },
-    // metaJS: {
-    //   transformGroup: webTransforms.es,
-    //   transforms: jsTransforms,
-    //   buildPath: `${BUILD_PATH}meta/`,
-    //   files: [
-    //     {
-    //       ...getDefaultFileConfig(theme),
-    //       destination: 'cssProperties.mjs',
-    //       format: 'js/token-data',
-    //     },
-    //     {
-    //       ...getDefaultFileConfig(theme),
-    //       destination: 'cssProperties.js',
-    //       format: 'common/token-data',
-    //     },
-    //     {
-    //       ...getDefaultFileConfig(theme),
-    //       destination: 'normalize.json',
-    //       format: 'json/token-normalize',
-    //     },
-    //   ],
-    // },
-    // metaTS: {
-    //   transformGroup: webTransforms.ts,
-    //   transforms: jsTransforms,
-    //   buildPath: `${BUILD_PATH}meta/`,
-    //   files: [
-    //     {
-    //       ...getDefaultFileConfig(theme),
-    //       destination: 'cssProperties.d.ts',
-    //       format: webFormats.tsDeclarations,
-    //     },
-    //   ],
-    // },
   };
 }
 

@@ -58,9 +58,9 @@ StyleDictionary.registerTransform({
 // run
 
 const brands = {
-  items: ['skills'],
+  items: ['tocion'],
   results: {
-    skills: {
+    tocion: {
       platforms: [WEB],
       themes: [LIGHT, DARK],
     },
