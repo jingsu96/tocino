@@ -1,0 +1,40 @@
+{
+  "name": "@tocino-ui/design-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for Tocino.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node ./build.cjs && pnpm compile:normalize",
+    "compile:normalize": "sass ./normalize.scss ./dist/normalize/normalize.css",
+    "fix:css": "stylelint --fix \"./**/*.@(css|scss)\"",
+    "lint:css": "stylelint \"./**/*.@(css|scss)\" --max-warnings 0",
+    "lint:js": "eslint --max-warnings 0 \"./**/*.@(cjs|mjs)\"",
+    "prebuild": "rm -rf dist",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "design system",
+    "design tokens"
+  ],
+  "author": "JingHuang Su",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/JingHuangSu1996/tocino/issues"
+  },
+  "devDependencies": {
+    "change-case": "^4.1.2",
+    "postcss": "^8.4.31",
+    "sass": "^1.68.0",
+    "style-dictionary": "^3.8.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-prettier": "^4.0.2"
+  }
+}

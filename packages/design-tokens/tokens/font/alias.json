@@ -1,0 +1,224 @@
+{
+  "sys": {
+    "typescale": {
+      "display": {
+        "large": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "57px"
+          },
+          "line-height": {
+            "value": "64px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        },
+        "medium": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "45px"
+          },
+          "line-height": {
+            "value": "52px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        },
+        "small": {
+          "font": "{ref.typeface.brand.value}",
+          "size": {
+            "value": "36px"
+          },
+          "line-height": {
+            "value": "44px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        }
+      },
+      "headline": {
+        "large": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "32px"
+          },
+          "line-height": {
+            "value": "40px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        },
+        "medium": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "28px"
+          },
+          "line-height": {
+            "value": "36px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        },
+        "small": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "24px"
+          },
+          "line-height": {
+            "value": "32px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        }
+      },
+      "title": {
+        "large": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "22px"
+          },
+          "line-height": {
+            "value": "28px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        },
+        "medium": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "16px"
+          },
+          "line-height": {
+            "value": "24px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.medium.value}"
+          }
+        },
+        "small": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "14px"
+          },
+          "line-height": {
+            "value": "20px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.medium.value}"
+          }
+        }
+      },
+      "label": {
+        "large": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "14px"
+          },
+          "line-height": {
+            "value": "20px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.medium.value}"
+          }
+        },
+        "medium": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "12px"
+          },
+          "line-height": {
+            "value": "16px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.medium.value}"
+          }
+        },
+        "small": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "11px"
+          },
+          "line-height": {
+            "value": "16px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.medium.value}"
+          }
+        }
+      },
+      "body": {
+        "large": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "16px"
+          },
+          "line-height": {
+            "value": "24px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        },
+        "medium": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "14px"
+          },
+          "line-height": {
+            "value": "20px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        },
+        "small": {
+          "font": {
+            "value": "{ref.typeface.brand.value}"
+          },
+          "size": {
+            "value": "12px"
+          },
+          "line-height": {
+            "value": "16px"
+          },
+          "weight": {
+            "value": "{ref.typeface.weight.regular.value}"
+          }
+        }
+      }
+    }
+  }
+}

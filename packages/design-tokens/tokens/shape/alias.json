@@ -1,0 +1,40 @@
+{
+  "sys": {
+    "shape": {
+      "cornor": {
+        "none": "0",
+        "full": "50%",
+        "extra-large": {
+          "value": "28px",
+          "top": {
+            "value": "28px 28px 0 0"
+          }
+        },
+        "large": {
+          "value": "16px",
+          "top": {
+            "value": "16px 16px 0 0"
+          },
+          "start": {
+            "value": "16px 0 0 16px"
+          },
+          "end": {
+            "value": "0 16px 16px 0"
+          }
+        },
+        "medium": {
+          "value": "12px"
+        },
+        "small": {
+          "value": "8px"
+        },
+        "extra-small": {
+          "value": "4px",
+          "top": {
+            "value": "4px 4px 0 0"
+          }
+        }
+      }
+    }
+  }
+}

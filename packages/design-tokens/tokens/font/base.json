@@ -1,0 +1,14 @@
+{
+  "ref": {
+    "typeface": {
+      "weight": {
+        "regular": { "value": 400 },
+        "medium": { "value": 500 },
+        "bold": { "value": 700 }
+      },
+      "brand": {
+        "value": "Roboto"
+      }
+    }
+  }
+}
