@@ -1,6 +1,6 @@
 {
   "name": "@tocino-ui/design-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design tokens for Tocino.",
   "main": "index.js",
   "type": "module",
