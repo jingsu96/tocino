@@ -1,4 +1,4 @@
-const { BUILD_PATH, DARK } = require('../const/index.cjs');
+const { BUILD_PATH, DARK, PREFIX } = require('../const/index.cjs');
 const { cssTransforms, getDefaultFileConfig, getBaseFileConfig, jsTransforms } = require('../configs/base.cjs');
 const { webTransforms } = require('../configs/transforms.cjs');
 const { webFormats } = require('../configs/formats.cjs');
@@ -15,6 +15,7 @@ function getWebConfig(theme) {
     theming_css: {
       transformGroup: webTransforms.css,
       transforms: cssTransforms,
+      prefix: PREFIX,
       buildPath: notDefaultTheme ? `${BUILD_PATH}/themes/` : `${BUILD_PATH}css/`,
       files: [
         {
@@ -30,6 +31,7 @@ function getWebConfig(theme) {
     css: {
       transformGroup: webTransforms.css,
       buildPath: `${BUILD_PATH}css/`,
+      prefix: PREFIX,
       files: [
         {
           ...getBaseFileConfig(),
@@ -42,6 +44,7 @@ function getWebConfig(theme) {
       transformGroup: webTransforms.scss,
       transforms: cssTransforms,
       buildPath: `${BUILD_PATH}scss/`,
+      prefix: PREFIX,
       files: [
         {
           ...getDefaultFileConfig(theme),
@@ -53,6 +56,7 @@ function getWebConfig(theme) {
     scss: {
       transformGroup: webTransforms.scss,
       buildPath: `${BUILD_PATH}scss/`,
+      prefix: PREFIX,
       files: [
         {
           ...getBaseFileConfig(),
@@ -65,6 +69,7 @@ function getWebConfig(theme) {
       transformGroup: webTransforms.es,
       transforms: jsTransforms,
       buildPath: notDefaultTheme ? THEME_PATH : BUILD_PATH,
+      prefix: PREFIX,
       files: [
         {
           ...getDefaultFileConfig(theme),
@@ -77,6 +82,7 @@ function getWebConfig(theme) {
       transformGroup: webTransforms.es,
       transforms: jsTransforms,
       buildPath: BUILD_PATH,
+      prefix: PREFIX,
       files: [
         {
           ...getBaseFileConfig(),
@@ -89,6 +95,7 @@ function getWebConfig(theme) {
       transformGroup: webTransforms.ts,
       transforms: jsTransforms,
       buildPath: notDefaultTheme ? THEME_PATH : BUILD_PATH,
+      prefix: PREFIX,
       files: [
         {
           ...getDefaultFileConfig(theme),
@@ -100,6 +107,7 @@ function getWebConfig(theme) {
     ts: {
       transformGroup: webTransforms.ts,
       transforms: jsTransforms,
+      prefix: PREFIX,
       buildPath: BUILD_PATH,
       files: [
         {
