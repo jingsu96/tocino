@@ -8,9 +8,14 @@ const WEB = 'web';
 const DARK = 'dark';
 const LIGHT = 'light';
 
+// prefix
+
+const PREFIX = 'tocino';
+
 module.exports = {
   BUILD_PATH,
   DARK,
   LIGHT,
   WEB,
+  PREFIX,
 };
