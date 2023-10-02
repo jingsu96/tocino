@@ -2,10 +2,6 @@
   Tocino UI is the experimental design system for the Web
 </h1>
 
-## Installation
+This package contains the source code of the react components for the Tocino UI design system. and it's for tutorial purposes only.
 
-- TBD
-
-## Documentation
-
-- TBD
+Most of the components design are based on the [Material V3](https://m3.material.io/) guidelines.

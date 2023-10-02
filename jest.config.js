@@ -1,5 +1,5 @@
 module.exports = {
-  roots: ['./packages/components'],
+  roots: ['./packages/components', './packages/core'],
   preset: 'ts-jest',
   testEnvironment: './custom-env.ts',
   transform: {
