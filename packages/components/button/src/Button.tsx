@@ -6,7 +6,11 @@ export type ButtonProps = {
 };
 
 export const Button = React.forwardRef<HTMLDivElement, ButtonProps>(() => {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <span className="button-label">Hello World</span>
+    </div>
+  );
 });
 
 Button.displayName = 'Button';
