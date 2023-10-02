@@ -33,5 +33,5 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  ignorePatterns: ['node_modules', 'plop-templates', 'packages/design-tokens'],
+  ignorePatterns: ['node_modules', 'plop-templates', 'packages/design-tokens', 'packages/css'],
 };
