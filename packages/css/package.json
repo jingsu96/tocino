@@ -1,0 +1,60 @@
+{
+  "name": "@tocino-ui/css",
+  "version": "1.0.0",
+  "description": "@tocino-ui styling",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JingHuangSu1996/tocino.git"
+  },
+  "sideEffects": false,
+  "bugs": {
+    "url": "https://github.com/JingHuangSu1996/tocino/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "script/build-css.js",
+    "dist": "script/dist.js",
+    "dist:watch": "chokidar \"src/**/*.scss\" -c \"script/dist.js\"",
+    "dev": "script/build-css.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@csstools/postcss-sass": "^5.0.1",
+    "autoprefixer": "^10.4.13",
+    "chokidar-cli": "^3.0.0",
+    "cssstats": "^4.0.5",
+    "eslint": "^8.37.0",
+    "eslint-plugin-jest": "^27.2.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "filesize": "^10.0.5",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^11.1.0",
+    "globby": "^13.1.4",
+    "jest": "^29.5.0",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.4.5",
+    "postcss-calc": "^8.2.4",
+    "postcss-custom-properties-fallback": "^1.0.2",
+    "postcss-import": "^15.0.0",
+    "postcss-load-config": "^4.0.1",
+    "postcss-scss": "^4.0.5",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^2.8.8",
+    "semver": "^7.3.8",
+    "stylelint": "^15.7.0",
+    "table": "^6.8.1"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 4 Firefox versions",
+    "last 3 Safari versions",
+    "not Safari 12",
+    "last 4 Edge versions",
+    "not Edge <= 18",
+    "Firefox ESR"
+  ]
+}
