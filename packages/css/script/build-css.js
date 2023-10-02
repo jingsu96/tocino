@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { globby } from 'globby';
-import compiler from './jtui-css-compiler.js';
+import compiler from './tocino-css-compiler.js';
 import { dirname, join } from 'path';
 
 import fsExtra from 'fs-extra';
@@ -9,7 +9,7 @@ const { mkdirp, readFile, writeFile } = fsExtra;
 const inDir = 'src';
 const outDir = 'dist';
 const bundleNames = {
-  'index.scss': 'jtui',
+  'index.scss': 'tocino',
 };
 
 const files = await globby([`${inDir}/**/index.scss`]);
