@@ -3,6 +3,36 @@
   --tocino-button-label-text-font: var(--tocino-sys-typescale-label-large-font);
   --tocino-button-label-text-size: var(--tocino-sys-typescale-label-large-size);
   --tocino-button-label-text-weight: var(--tocino-sys-typescale-label-large-weight);
+
+  --tocino-elevated-button-shadow: var(--tocino-sys-elevation-level-1);
+  --tocino-elevated-button-container-color: var(--tocino-sys-color-surface-container-low, #f7f2fa);
+  --tocino-elevated-button-container-shape: var(--tocino-sys-shape-corner-large, 100px);
+  --tocino-elevated-button-label-text-color: var(--tocino-sys-color-primary);
+}
+
+.tocino-Button {
+  position: relative;
+
+  display: inline-flex;
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  padding: 10px 24px;
+
+  cursor: pointer;
+
+  &[data-variant='elevated'] {
+    box-shadow: var(--tocino-elevated-button-shadow);
+    background-color: var(--tocino-elevated-button-container-color);
+    border-radius: var(--tocino-elevated-button-container-shape);
+
+    .button-label {
+      color: var(--tocino-elevated-button-label-text-color);
+    }
+  }
 }
 
 .button-label {

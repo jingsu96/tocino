@@ -6,6 +6,7 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@storybook/addon-interactions',
+    'storybook-addon-theme-switcher',
   ],
   framework: {
     name: '@storybook/react-webpack5',

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button as Component } from './';
+import { Button as Component, ButtonProps } from './';
 
 import type { Meta, StoryFn } from '@storybook/react';
 
@@ -10,8 +10,12 @@ const storyMetadata: Meta<typeof Component> = {
 
 export default storyMetadata;
 
-const Template: StoryFn<typeof Component> = (args) => <Component {...args} />;
+const Template: StoryFn<typeof Component> = (args: ButtonProps) => {
+  return <Component {...args}>Elevated Button</Component>;
+};
 
-export const Button: StoryFn = Template.bind({});
+export const Button: StoryFn<typeof Component> = Template.bind({});
 
-Button.args = {};
+Button.args = {
+  variant: 'elevated',
+};

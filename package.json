@@ -62,6 +62,7 @@
     "plop": "^4.0.0",
     "prettier": "^3.0.0",
     "storybook": "^7.4.3",
+    "storybook-addon-theme-switcher": "^0.0.5",
     "ts-jest": "^29.1.0",
     "turbo": "^1.10.13"
   },

@@ -1,7 +1,7 @@
 {
-  "name": "@tocino-ui/button",
+  "name": "@tocino-ui/ripple",
   "version": "1.0.0",
-  "description": "react Button",
+  "description": "react Ripple",
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -42,6 +42,6 @@
   },
   "dependencies": {
     "@tocino-ui/css": "workspace:^",
-    "@tocino-ui/ripple": "workspace:^"
+    "clsx": "^2.0.0"
   }
 }
