@@ -1,0 +1,40 @@
+:root {
+  --tocino-ripple-container-shape: var(--tocino-sys-shape-corner-large, 100px);
+}
+
+.tocino-Ripple__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: var(--tocino-ripple-container-shape);
+}
+
+.tocino-Ripple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.0001, 0.0001);
+
+  &.tocino--Ripple-animating {
+    transform: none;
+    transition:
+      transform 0.15s linear,
+      width 0.15s linear,
+      height 0.15s linear,
+      opacity 0.15s linear;
+    will-change: transform, width, height, opacity;
+  }
+
+  &.tocino--Ripple-visible {
+    opacity: 0.3;
+  }
+}
