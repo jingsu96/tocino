@@ -24,6 +24,14 @@ const preview: Preview = {
     themeSwitcher: {
       themes: ['light', 'dark'],
       dataAttribute: 'theme',
+      icon: 'circlehollow',
+    },
+    themes: {
+      default: 'light',
+      list: [
+        { name: 'light', class: 'theme-twt' },
+        { name: 'dark', class: 'theme-fb' },
+      ],
     },
   },
 };

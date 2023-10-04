@@ -5,7 +5,6 @@ import '@tocino-ui/css/dist/ripple.css';
 export type RippleProps = {
   /** Add a description comment for each prop. */
   target: React.RefObject<HTMLButtonElement>;
-  color?: string;
 };
 
 /**
@@ -14,7 +13,7 @@ export type RippleProps = {
  * =================
  */
 
-export const useRipple = ({ target, color }: RippleProps) => {
+export const useRipple = ({ target }: RippleProps) => {
   const [rippleStyle, setRippleStyle] = useState({});
   const [rippleIsVisible, setRippleIsVisible] = useState(false);
   const rippleElRef = useRef(null);
@@ -52,12 +51,11 @@ export const useRipple = ({ target, color }: RippleProps) => {
         left: Math.round(clickEvent.pageX - offset.left - radius) + 'px',
         width: diameterPx,
         height: diameterPx,
-        backgroundColor: color,
       });
 
       setRippleIsVisible(true);
     },
-    [rippleElRef, color],
+    [rippleElRef],
   );
 
   const hideRipple = useCallback(() => {
