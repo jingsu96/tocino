@@ -1,7 +1,7 @@
 {
-  "name": "@tocino-ui/button",
+  "name": "@tocino-ui/focus-ring",
   "version": "1.0.0",
-  "description": "react Button",
+  "description": "react FocusRing",
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -41,10 +41,9 @@
     "react-dom": "^16.8 || ^17.0 || ^18.0"
   },
   "dependencies": {
-    "@tocino-ui/css": "workspace:*",
-    "@tocino-ui/focus-ring": "workspace:*",
-    "@tocino-ui/ripple": "workspace:*",
-    "@tocino-ui/slots": "workspace:*",
+    "@react-aria/focus": "^3.14.2",
+    "@react-aria/utils": "^3.21.0",
+    "@tocino-ui/css": "workspace:^",
     "clsx": "^2.0.0"
   }
 }

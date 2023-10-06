@@ -1,7 +1,7 @@
 {
-  "name": "@tocino-ui/button",
+  "name": "@tocino-ui/slots",
   "version": "1.0.0",
-  "description": "react Button",
+  "description": "react Slots",
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -41,10 +41,6 @@
     "react-dom": "^16.8 || ^17.0 || ^18.0"
   },
   "dependencies": {
-    "@tocino-ui/css": "workspace:*",
-    "@tocino-ui/focus-ring": "workspace:*",
-    "@tocino-ui/ripple": "workspace:*",
-    "@tocino-ui/slots": "workspace:*",
     "clsx": "^2.0.0"
   }
 }

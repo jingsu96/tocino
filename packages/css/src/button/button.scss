@@ -4,6 +4,8 @@
   --tocino-button-label-text-size: var(--tocino-sys-typescale-label-large-size);
   --tocino-button-label-text-weight: var(--tocino-sys-typescale-label-large-weight);
   --tocino-button-container-shape: var(--tocino-sys-shape-corner-large, 100px);
+  --tocino-button-disabled-container-color: var(--tocino-sys-color-on-surface);
+  --tocino-button-disabled-label-text-color: var(--tocino-sys-color-on-surface);
 
   --tocino-elevated-button-shadow: var(--tocino-sys-elevation-level-1);
   --tocino-elevated-button-container-color: var(--tocino-sys-color-surface-container-low);
@@ -36,6 +38,16 @@
   padding: 10px 24px;
 
   cursor: pointer;
+
+  .tocino-Ripple {
+    background-color: rgba(103, 80, 164, 0.12);
+  }
+
+  &__label {
+    line-height: var(--tocino-button-label-text-line-height);
+    font-size: var(--tocino-button-label-text-size);
+    font-weight: var(--tocino-button-label-text-weight);
+  }
 
   &[data-variant='elevated'] {
     box-shadow: var(--tocino-elevated-button-shadow);
@@ -83,13 +95,18 @@
     }
   }
 
-  .tocino-Ripple {
-    background-color: rgba(103, 80, 164, 0.12);
-  }
+  &.is-disabled {
+    cursor: default;
+    pointer-events: none;
 
-  &__label {
-    line-height: var(--tocino-button-label-text-line-height);
-    font-size: var(--tocino-button-label-text-size);
-    font-weight: var(--tocino-button-label-text-weight);
+    ::before {
+      opacity: 0.12;
+      background-color: var(--tocino-button-disabled-container-color);
+    }
+
+    .tocino-Button__label {
+      color: var(--tocino-button-disabled-label-text-color);
+      opacity: 0.38;
+    }
   }
 }

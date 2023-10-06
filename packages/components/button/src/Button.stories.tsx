@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Button as Component, ButtonProps } from './';
 
 import type { Meta } from '@storybook/react';
+import { SlotProvider } from '@tocino-ui/slots';
 
 const storyMetadata: Meta<typeof Component> = {
   title: 'Button',
@@ -16,11 +17,20 @@ const variants = ['elevated', 'outline', 'text', 'filled', 'filled-tonal'] as co
 const Template = (args: ButtonProps) => {
   return variants.map((variant) => {
     return (
-      <div style={{ display: 'inline-flex', marginRight: 10 }}>
+      <SlotProvider
+        slots={{
+          button: {
+            style: {
+              marginRight: 10,
+              display: 'inline-flex',
+            },
+          },
+        }}
+      >
         <Component {...args} variant={variant}>
           Label
         </Component>
-      </div>
+      </SlotProvider>
     );
   });
 };
