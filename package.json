@@ -16,6 +16,7 @@
     "release": "changeset publish",
     "storybook": "storybook dev -p 6009",
     "setup": "rm -rf node_modules packages/*/node_modules && pnpm install && pnpm build:packages",
+    "setup-git": "tsx ./scripts/setupUser.ts",
     "test": "jest --passWithNoTests",
     "version": "changeset version"
   },
@@ -27,6 +28,7 @@
   "private": true,
   "packageManager": "pnpm@8.6.12",
   "devDependencies": {
+    "@actions/exec": "^1.1.1",
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "7.21.5",
     "@babel/preset-react": "^7.18.6",
