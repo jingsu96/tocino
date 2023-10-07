@@ -6,3 +6,4 @@ jest-coverage
 .cache
 .turbo
 .jest-cache/
+storybook-static/
