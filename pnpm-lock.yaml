@@ -143,6 +143,9 @@ importers:
 
   packages/components/button:
     dependencies:
+      '@tocino-ui/core':
+        specifier: workspace:*
+        version: link:../../core
       '@tocino-ui/css':
         specifier: workspace:*
         version: link:../../css

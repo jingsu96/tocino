@@ -4,6 +4,8 @@ import clsx from 'clsx';
 import { Ripple } from '@tocino-ui/ripple';
 import { FocusRing } from '@tocino-ui/focus-ring';
 import { useSlotProps } from '@tocino-ui/slots';
+import { useComposedRefs } from '@tocino-ui/core';
+
 import '@tocino-ui/css/dist/button.css';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -12,10 +14,11 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isDisabled?: boolean;
 }
 
-export const Button = React.forwardRef<HTMLButtonElement, PropsWithChildren<ButtonProps>>((props) => {
+export const Button = React.forwardRef<HTMLButtonElement, PropsWithChildren<ButtonProps>>((props, forwardRef) => {
   props = useSlotProps(props, 'button');
   const { variant, children, isDisabled } = props;
   const btnRef = useRef<HTMLButtonElement>(null);
+  const ref = useComposedRefs(btnRef, forwardRef);
 
   return (
     <FocusRing isDisabled={isDisabled}>
@@ -23,7 +26,7 @@ export const Button = React.forwardRef<HTMLButtonElement, PropsWithChildren<Butt
         {...props}
         className={clsx('tocino-Button', { 'is-disabled': isDisabled })}
         data-variant={variant}
-        ref={btnRef}
+        ref={ref}
       >
         <span className="tocino-Button__label">{children}</span>
         <Ripple target={btnRef} />
