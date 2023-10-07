@@ -70,6 +70,7 @@
     "storybook": "^7.4.3",
     "storybook-addon-theme-switcher": "^0.0.5",
     "ts-jest": "^29.1.0",
+    "tsx": "^3.13.0",
     "turbo": "^1.10.13"
   },
   "dependencies": {
