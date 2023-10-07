@@ -41,6 +41,7 @@
     "react-dom": "^16.8 || ^17.0 || ^18.0"
   },
   "dependencies": {
+    "@tocino-ui/core": "workspace:*",
     "@tocino-ui/css": "workspace:*",
     "@tocino-ui/focus-ring": "workspace:*",
     "@tocino-ui/ripple": "workspace:*",
