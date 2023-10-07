@@ -9,16 +9,15 @@ import { useComposedRefs } from '@tocino-ui/core';
 import '@tocino-ui/css/dist/button.css';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  /** Add a description comment for each prop. */
   variant: 'elevated' | 'outline' | 'text' | 'filled' | 'filled-tonal';
   isDisabled?: boolean;
 }
 
-export const Button = React.forwardRef<HTMLButtonElement, PropsWithChildren<ButtonProps>>((props, forwardRef) => {
+export const Button = React.forwardRef<HTMLButtonElement, PropsWithChildren<ButtonProps>>((props, ref) => {
   props = useSlotProps(props, 'button');
   const { variant, children, isDisabled } = props;
-  const btnRef = useRef<HTMLButtonElement>(null);
-  const ref = useComposedRefs(btnRef, forwardRef);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const composedRefs = useComposedRefs(buttonRef, ref);
 
   return (
     <FocusRing isDisabled={isDisabled}>
@@ -26,10 +25,10 @@ export const Button = React.forwardRef<HTMLButtonElement, PropsWithChildren<Butt
         {...props}
         className={clsx('tocino-Button', { 'is-disabled': isDisabled })}
         data-variant={variant}
-        ref={ref}
+        ref={composedRefs}
       >
         <span className="tocino-Button__label">{children}</span>
-        <Ripple target={btnRef} />
+        <Ripple target={buttonRef} />
       </button>
     </FocusRing>
   );
