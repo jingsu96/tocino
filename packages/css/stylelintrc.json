@@ -4,6 +4,7 @@
   "rules": {
     "at-rule-no-unknown": null,
     "order/properties-alphabetical-order": true,
-    "selector-class-pattern": null
+    "selector-class-pattern": null,
+    "scss/at-import-partial-extension": null
   }
 }

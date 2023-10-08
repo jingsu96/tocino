@@ -46,4 +46,5 @@ jobs:
           node-version: '16'
           cache: 'pnpm'
       - run: pnpm install
+      - run: pnpm build:packages
       - run: pnpm turbo lint:ts
