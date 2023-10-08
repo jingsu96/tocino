@@ -3,25 +3,25 @@
 }
 
 .tocino-Ripple__container {
-  position: absolute;
-  top: 0;
-  left: 0;
+  border-radius: var(--tocino-ripple-container-shape);
   display: block;
   height: 100%;
-  width: 100%;
+  left: 0;
   overflow: hidden;
-  z-index: 0;
   pointer-events: none;
-  border-radius: var(--tocino-ripple-container-shape);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .tocino-Ripple {
-  position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 50%;
+  left: 0;
   opacity: 0;
   pointer-events: none;
+  position: absolute;
+  top: 0;
   transform: scale(0.0001, 0.0001);
 
   &.tocino--Ripple-animating {
