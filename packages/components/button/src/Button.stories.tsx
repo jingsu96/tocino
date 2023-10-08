@@ -7,7 +7,6 @@ import { SlotProvider } from '@tocino-ui/slots';
 const storyMetadata: Meta<typeof Component> = {
   title: 'Button',
   component: Component,
-  argTypes: {},
 };
 
 export default storyMetadata;
@@ -36,5 +35,3 @@ const Template = (args: ButtonProps) => {
 };
 
 export const Button = Template.bind({});
-
-Button.args = {};

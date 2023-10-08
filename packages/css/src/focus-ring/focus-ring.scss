@@ -11,6 +11,7 @@
   0% {
     outline-width: 0;
   }
+
   100% {
     outline-width: 8px;
   }
@@ -29,13 +30,13 @@
   animation: {
     delay: 0s, calc(var(--tocino-focus-ring-duration) * 0.25);
     duration: calc(var(--tocino-focus-ring-duration) * 0.25), calc(var(--tocino-focus-ring-duration) * 0.75);
-    timing-function: cubic-bezier(0.2, 0, 0, 1);
     name: outward-grow, outward-shrink;
+    timing-function: cubic-bezier(0.2, 0, 0, 1);
   }
 
   &--disabled {
-    outline: none;
-    inset: 0;
     animation: none;
+    inset: 0;
+    outline: none;
   }
 }

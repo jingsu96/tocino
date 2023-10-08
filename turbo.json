@@ -6,7 +6,15 @@
       "dependsOn": ["^build"]
     },
     "test": {},
-    "lint": {},
+    "lint:css": {
+      "inputs": ["**/*.css", "**/*.scss"]
+    },
+    "lint:js": {
+      "inputs": ["**/*.js", "**/*.ts", "**/*.tsx"]
+    },
+    "lint:ts": {
+      "inputs": ["**/*.ts", "**/*.tsx"]
+    },
     "dev": {
       "cache": false
     },

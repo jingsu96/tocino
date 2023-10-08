@@ -7,11 +7,9 @@
   "scripts": {
     "build": "node ./build.cjs && pnpm compile:normalize",
     "compile:normalize": "sass ./normalize.scss ./dist/normalize/normalize.css",
-    "fix:css": "stylelint --fix \"./**/*.@(css|scss)\"",
-    "lint:css": "stylelint \"./**/*.@(css|scss)\" --max-warnings 0",
-    "lint:js": "eslint --max-warnings 0 \"./**/*.@(cjs|mjs)\"",
     "prebuild": "rm -rf dist",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "lint:css": "stylelint \"./styles/*.scss\" --config ./stylelintrc.json"
   },
   "keywords": [
     "design system",

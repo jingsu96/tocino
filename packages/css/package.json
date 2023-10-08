@@ -17,7 +17,9 @@
     "build": "script/build-css.js",
     "dist": "script/dist.js",
     "dist:watch": "chokidar \"src/**/*.scss\" -c \"script/dist.js\"",
-    "dev": "script/build-css.js"
+    "dev": "script/build-css.js",
+    "fix:css": "stylelint --fix \"./**/*.@(css|scss)\" --config ./stylelintrc.json",
+    "lint:css": "stylelint \"src/**/*.scss\" --config ./stylelintrc.json"
   },
   "publishConfig": {
     "access": "public"
@@ -45,7 +47,12 @@
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^2.8.8",
     "semver": "^7.3.8",
-    "stylelint": "^15.7.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-prettier": "^4.0.2",
     "table": "^6.8.1"
   },
   "browserslist": [
