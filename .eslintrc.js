@@ -2,7 +2,7 @@ const ERROR = 'error';
 
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:jsx-a11y/recommended', 'prettier'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -10,7 +10,7 @@ module.exports = {
       modules: true,
     },
   },
-  plugins: [],
+  plugins: ['jsx-a11y'],
   rules: {
     'default-case': ERROR,
     'default-case-last': ERROR,
@@ -26,6 +26,7 @@ module.exports = {
     'no-negated-condition': ERROR,
     'no-self-compare': ERROR,
     'no-template-curly-in-string': ERROR,
+    'jsx-a11y/no-autofocus': 0,
   },
   env: {
     jest: true,
