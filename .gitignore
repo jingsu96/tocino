@@ -8,3 +8,4 @@ jest-coverage
 .turbo
 .jest-cache/
 storybook-static/
+build-storybook.log
