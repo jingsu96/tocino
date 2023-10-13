@@ -4,7 +4,7 @@
   "description": "Tocino UI is the experimental design system for the Web",
   "scripts": {
     "build:packages": "turbo run build",
-    "build:storybook": "storybook build",
+    "build-storybook": "pnpm build:packages && storybook build",
     "changeset": "changeset",
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
     "dev": "turbo run dev -- --watch",
@@ -56,6 +56,7 @@
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
+    "chromatic": "^7.3.0",
     "eslint": "^8.39.0",
     "eslint-config-eslint": "^7.0.0",
     "eslint-config-prettier": "^8.3.0",
