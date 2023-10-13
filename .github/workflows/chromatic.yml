@@ -12,6 +12,13 @@ jobs:
     # Job steps
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'pnpm'
       - run: pnpm install
         #👇 Adds Chromatic as a step in the workflow
       - uses: chromaui/action@v1
